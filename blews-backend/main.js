@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { MongoClient } from "mongodb";
+import {client} from "./dbconnection.js"
 
 const PORT = 42069;
 const app = express();
