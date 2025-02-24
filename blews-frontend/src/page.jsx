@@ -18,6 +18,7 @@ function Page() {
 			return (
 				<div className="article">
 					<h2><a href={val.link}>{val.title}</a></h2>
+					<p><i>{val.creation_date}</i></p>
 					<p>{val.content}</p>
 				</div>
 			);

@@ -7,7 +7,7 @@ await client.connect();
 
 const collection = client.db("webnews").collection("idnes");
 
-const PAGE_SIZE = 10
+const PAGE_SIZE = 25
 
 export async function getPage(page)
 {
