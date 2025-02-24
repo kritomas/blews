@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import "./page.css"
+import "./main.css"
 
 function Page() {
 	let data;
@@ -46,11 +48,11 @@ function Page() {
 
 	return (
 		<div>
-			<div>
+			<header>
 				<p><b>Current Page: </b>{pageIndex}</p>
 				<button onClick={previousPage}>Previous</button>
 				<button onClick={nextPage}>Next</button>
-			</div>
+			</header>
 			<br/>
 			{pageView}
 		</div>
