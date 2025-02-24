@@ -22,6 +22,8 @@ app.get("/api/page/:page", async (req, res, next) =>
 	}
 });
 
+app.use(express.static("../blews-frontend/dist"));
+
 app.listen(PORT, () =>
 {
 	console.log("blews backend listening at " + PORT);
