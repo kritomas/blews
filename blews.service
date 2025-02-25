@@ -1,0 +1,9 @@
+[Unit]
+Description=Blews Service
+
+[Service]
+Type=simple
+ExecStart=/var/blews/blews-backend/start-server.sh
+
+[Install]
+WantedBy=multi-user.target
